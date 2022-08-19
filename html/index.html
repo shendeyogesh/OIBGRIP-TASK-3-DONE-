@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./l2task3/public/intern.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
+    <title>Temprature Converter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hed"><i class="bi bi-thermometer-sun"></i>  Temperature Converter  <i class="bi bi-thermometer-snow"></i></div>
+        <div class="emoji">
+            <i id="icon" class="fa-solid fa-face-grin"></i>
+            <p id="par"></p>
+
+        </div>
+        <div class="boxcontainer">
+            <div class="box1">
+                <p>Degree</p>
+                <input type="number" class="takval" />
+            </div>
+            <div class="box1">
+                <p>Type</p>
+                <select name="" id="unit">   
+                     <option value="Fahrenheit">Fahrenheit</option>
+                     <option value="Celsius">Celsious</option>  
+                </select>
+            </div>
+        </div>
+        <div class="valuecontainer">
+            <p>Result</p>
+            <div class="value"></div>
+        </div>
+        <button onclick="temprature()" class="button">convert</button>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+</html>
